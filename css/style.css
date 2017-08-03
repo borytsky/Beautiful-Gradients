@@ -83,7 +83,7 @@ text-shadow: 3px 2px 5px rgba(0,0,0, 0.4);
 .hero-section p{
 padding: 23px;
 color: white;
-font-size: 1.15em;
+font-size: 1.10em;
 font-family: 'Times New Roman', serif;
 text-align: center;
 }
@@ -96,6 +96,7 @@ text-align: center;
 	background-size: cover;
 	 -ms-grid-row: 2;
   -ms-grid-column: 1;
+  	z-index: 3;
 }
 
 .about-img p{
@@ -236,7 +237,7 @@ text-align: center;
 .container-form {
 	grid-area: container-form;
 	background: black;
-				 -ms-grid-row: 8;
+	-ms-grid-row: 8;
   -ms-grid-column: 1;
 }
 
@@ -322,6 +323,8 @@ fieldset {
 	text-align: center;
 	background: black;
 	box-shadow: -3px -2px 24px rgba(0,0,0, 0.5);
+	-ms-grid-row: 9;
+  -ms-grid-column: 1;
 }
 
 
