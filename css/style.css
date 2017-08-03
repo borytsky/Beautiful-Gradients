@@ -205,7 +205,6 @@ text-align: center;
 	background-position: center;
 	-webkit-clip-path: circle(5em at 50% 50%);
 	clip-path: circle(5em at 50% 50%);
-
 }
 
 .team-member-3 {
@@ -213,10 +212,9 @@ text-align: center;
 	min-height: 11em;
 	background-size: contain;
 	margin: 23px 0px 23px 0px;
--webkit-clip-path: circle(5em at 50% 50%);
-background-position: center;
-clip-path: circle(5em 50% 50%);
-	
+	background-position: center;
+	-webkit-clip-path: circle(5em at 50% 50%);
+	clip-path: circle(5em at 50% 50%);
 }
 
 .container-form {
