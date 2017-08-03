@@ -10,7 +10,8 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-device-width : 768px) {
+@media screen and (max-width : 768px) {
+
 #header-nav {
 	position: fixed;
 	background: rgba(255,255,255, 0.95);
