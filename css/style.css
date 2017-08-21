@@ -10,7 +10,380 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+#header-nav {
+	position: fixed;
+	background: rgba(255,255,255, 0.95);
+	width: 100%;
+	height: 4em;
+	box-shadow: 3px 2px 24px rgba(0,0,0, 0.5);
+	z-index: 115;
+}
+
+.logo {
+	margin: 1.2em 20% 1.2em 20%;
+	padding-left: 10px;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: black;
+	border-left: solid 5px yellow; 
+}
+
+
+.container {
+	margin: 0;
+	display: grid;
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	-ms-grid-rows: auto;
+	grid-template-areas: 
+	"hero-section hero-image"
+	"about-img about-img "
+	"about-text about-text"
+	"services-img services-img"
+	"services-text services-text"
+	"team-heading team-heading"
+	"team-text team-text"
+	"container-form container-form"
+	"footer footer"
+	;
+
+}
+
+
+.hero-section {
+	grid-area: hero-section ;
+width: 100%;
+height: 60em;
+padding-left: 4em;
+background: rgb(190,190,190);
+background-size: cover;
+z-index: 0;
+ -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.hero-image {
+	grid-area: hero-image ;
+	background: rgb(190,190,190);
+	width: 100%;
+	padding: 10%;
+}
+
+
+#notebook-img {
+	margin: 10em auto auto ;
+	height: auto; 
+	width: 55%;
+	max-width: 65%;
+}
+
+.hero-text {
+font-family: 'Cabin', sans-serif;
+font-size: 3em;
+color: white;
+text-transform: uppercase;
+text-align: center;
+margin: 6em auto auto auto;
+width: 100%;
+border-left: solid 5px yellow; 
+text-shadow: 3px 2px 5px rgba(0,0,0, 0.4);
+
+}
+
+
+.hero-section p{
+padding: 5em;
+color: white;
+font-size: 2.0em;
+font-family: 'Times New Roman', serif;
+text-align: center;
+}
+
+.about-img {
+	grid-area: about-img;
+ 	background: none;
+	margin: 0;
+	min-height: 1px;
+	 -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  	z-index: 3;
+}
+
+.about-img p{
+	text-align: center;
+	font-weight: 700;
+	color: yellow;
+	text-shadow: 2px 3px 0px rgba(255,255,255, 0.3);
+	margin-top: -0.7em;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3em;
+}
+
+.about-text {
+	margin-top: -1.5em;
+	padding: 6em 50em 20em 10em;
+	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('../img/bg.jpeg') ;
+	grid-area: about-text;
+		background-size: cover;
+		background-repeat: no-repeat;
+	height: 300px;
+	-ms-grid-row: 3;
+  -ms-grid-column: 1;
+ 
+}
+
+
+.about-important {
+	color: black;
+}
+
+
+
+.about-text p{
+	font-size: 1.15em;
+	color: rgb(80,80,80);
+	font-family: 'Cabin', sans-serif;
+	padding: 40px;
+	min-width: 500px;
+	background: white;
+	box-shadow: 3px 3px 15px rgba(0,0,0, 0.5)
+ 
+}
+
+.services-img {
+	grid-area: services-img;
+	background: white;
+	margin: 0;
+	min-height: 20px;
+	z-index: 3;
+	-ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
+.services-img p{
+	text-align: center;
+	font-weight: 700;
+	color: rgb(150,150,150);
+	text-shadow: 2px 3px 0px rgba(0,0,0, 0.7);
+	margin-top: -0.7em;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3em;
+}
+
+.services-text {
+	padding: 6em 15% 10em 15%;
+	font-family: 'Cabin', sans-serif;
+	color: black;
+	grid-area: services-text;
+	background: white;
+	font-size: 1.15em;
+	min-height: 200px;
+	-ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+
+
+
+.team-heading {
+	grid-area: team-heading;
+	background: rgb(190,190,190);
+	margin: 0;
+	min-height: 20px;
+	z-index: 3;
+	 -ms-grid-row: 6;
+  -ms-grid-column: 1;
+}
+
+
+
+.team-heading p{
+	text-align: center;
+	font-weight: 700;
+	color: rgb(0,0,0);
+	text-shadow: 2px 3px 0px rgba(255,255,255, 0.7);
+	margin-top: -0.7em;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3em;
+}
+
+.team-text {
+	grid-area: team-text;
+	margin-top: -2px;
+	font-family: 'Cabin', sans-serif;
+	padding: 23px 0px 5em 0px;
+	color: white;
+	background: rgb(190,190,190);
+			 -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.team-member-1 {
+	background: url('../img/team_member1.jpeg');
+	min-height: 11em;
+	background-size: contain;
+	margin-bottom: 23px;
+	-webkit-clip-path: circle(5em at 50% 50%);
+	background-position: center;
+	clip-path: circle(5em at 50% 50%);
+}
+
+.team-text p{
+	text-align: center;
+	font-size: 2em;
+	color: yellow;
+	text-shadow: 2px 3px 0px rgba(0,0,0, 0.5);
+}
+
+
+.team-member-2 {
+	background: url('../img/team2.jpeg');
+	min-height: 11em;
+	background-size: contain;
+	margin: 23px 0px 23px 0px;
+	background-position: center;
+	-webkit-clip-path: circle(5em at 50% 50%);
+	clip-path: circle(5em at 50% 50%);
+}
+
+.team-member-3 {
+	background: url('../img/team_member3.jpeg');
+	min-height: 11em;
+	background-size: contain;
+	margin: 23px 0px 23px 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-clip-path: circle(5em at 50% 50%);
+	clip-path: circle(5em at 50% 50%);
+}
+
+.container-form {
+	grid-area: container-form;
+	background: black;
+	-ms-grid-row: 8;
+  -ms-grid-column: 1;
+}
+
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact textarea, 
+#contact button[type="submit"] { 
+	font-family: 'Cabin', sans-serif;
+	 }
+
+.contact-heading {
+	text-align: center;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 3px 0px rgba(0,0,0, 0.3);
+	margin-top: -1.2em;
+	margin-bottom:2em;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3em;
+}
+
+	#contact {
+	 color: white;
+	background: black;
+	padding:23px 0px 70px 0px;
+
+}
+
+
+fieldset {
+	border: none !important;
+	width: 600px;
+	margin: 10px auto 0px auto;
+
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact textarea {
+	background: white;
+	width: 600px;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+
+#contact textarea {
+	width: 600px !important;
+	padding-bottom: 4em;
+	margin-bottom: -5px;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width: 300px;
+	margin:0 25%;
+	border: none;
+	background:yellow;
+	color:black;
+	padding:10px;
+	font-size:20px;
+}
+
+
+
+#contact button[type="submit"]:hover {
+	background:grey;
+	color:yellow;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+
+
+.footer {
+	grid-area: footer;
+	font-family: 'Cabin', sans-serif;
+	padding: 10px;
+	height: 4em;
+	font-size: 0.8em;
+	margin-top: -2px;
+	color: grey;
+	text-align: center;
+	background: black;
+	box-shadow: -3px -2px 24px rgba(0,0,0, 0.5);
+	-ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+
+
+
+
+
 @media screen and (max-width : 768px) {
+
+
+*  { /* reset all margins */
+margin: 0px;
+padding: 0px;
+}
+
+
+
+	.hero-image {
+	display: none;
+}
+
+#notebook-img {
+	display: none;
+}
+
 
 #header-nav {
 	position: fixed;
@@ -60,6 +433,7 @@ body{
 width: 100%;
 height: 40em;
 background: rgb(190,190,190);
+padding: 0;
 background-size: cover;
 z-index: 0;
  -ms-grid-row: 1;
@@ -111,7 +485,7 @@ text-align: center;
 
 .about-text {
 	margin: -2px;
-	padding: 23px 23px 5em 23px;
+	padding: 6em 23px 10em 23px;
 	background: rgb(32,32,32);
 	grid-area: about-text;
 	-ms-grid-row: 3;
@@ -119,10 +493,16 @@ text-align: center;
  
 }
 
+.about-important {
+	color: white;
+}
 
 .about-text p{
+		box-shadow: 0px 0px 0px black;
 	font-size: 1.15em;
 	color: rgb(210,210,210);
+	min-width: 200px;
+	background: none;
 	font-family: 'Cabin', sans-serif;
  
 }
@@ -148,7 +528,7 @@ text-align: center;
 }
 
 .services-text {
-	padding: 23px 23px 5em 23px;
+	padding: 6em 23px 10em 23px;
 	font-family: 'Cabin', sans-serif;
 	color: black;
 	grid-area: services-text;
@@ -271,31 +651,33 @@ text-align: center;
 
 fieldset {
 	border: none !important;
-	margin: 10px 23px 0px 23px !important;
+	width: 90% !important;
+	margin: 10px 5% 0px 5% !important;
 }
 
 #contact input[type="text"], 
 #contact input[type="email"], 
 #contact input[type="tel"], 
 #contact textarea {
+	width: 99% !important;
 	background: white;
-	width: 99%;
 	text-align: center;
 	padding: 10px 0px 10px 0px;
 }
 
 #contact textarea {
+	width: 99% !important;
 	padding-bottom: 4em;
 	margin-bottom: -5px;
 }
 
 #contact button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width: 40%;
 	border: none;
 	background:yellow;
 	color:black;
-	padding:10px;
+	margin: 0 30% 0 30% !important;
 	font-size:20px;
 }
 
